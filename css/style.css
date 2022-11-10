@@ -4,7 +4,7 @@
 }
 html,
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding: 0px;
   margin: 0px;
@@ -21,7 +21,7 @@ h5,
 h6 {
   line-height: normal;
   font-weight: normal;
-  font-family: "JosefinSans-B";
+
 }
 
 a {
@@ -196,7 +196,28 @@ a img {
 .icon-search {
   position: relative;
 }
+.search-pc
+{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 11;  
+  transition: all .5s ease-in-out;
+  display: none;
+  line-height: 100vh;
 
+}
+.closeX
+{
+  color: #FFF;
+  font-weight: bold;
+  position: absolute;
+  top: -50px;
+  
+}
 .search-pc .kw {
   width: 100%;
   height: 35px;
@@ -266,16 +287,15 @@ margin-left: 20px;
 }
 
 #searchformtab input{
-  border: none;
-  border-radius: 5px;
-  background-color: transparent;
+
   color: #0a0a0a;
   padding: 10px 25px 10px 30px;
-  height: 40px;
-  max-width: 350px;
-  min-width: 210px;
-  border-radius: 20px;
-  border:1px solid #8b8b8b
+  height: 100px;
+  max-width: 500px;
+  min-width: 500px;
+  border-radius: 50px;
+  border:1px solid #FFF;
+  background-color: #FFF;
 }
 .header {
   background: #00000085;
@@ -348,6 +368,10 @@ margin-left: 20px;
   font-weight: normal;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav>li {
@@ -776,7 +800,9 @@ background: rgba(185,8,18,0.8) !important;
   margin: 0px;
   border: none;
 }
-
+.search-icon{
+  color: #FFF;
+}
 .search-mobile {
   width: 100%;
   position: relative;
@@ -1390,98 +1416,6 @@ a.close:hover {
   text-align: center;
   background: #eee;
 }
-/* 
-.name-faq {
-  margin: 0px;
-  padding: 0px;
-  font-size: 15px;
-  font-family: "JosefinSans-B";
-  font-weight: normal;
-  background: #efeff0;
-  border-radius: 4px;
-  padding: 12px 8px;
-  cursor: pointer;
-  float: left;
-  width: calc(100% - 45px);
-}
-
-.faqcontent {
-  display: none;
-  width: calc(100% - 45px);
-  float: right;
-}
-
-.faq-icon {
-  background: url(/images/icon-faq.png) left top no-repeat;
-  width: 30px;
-  height: 25px;
-  float: left;
-  margin-right: 10px;
-}
-
-.faq-active .name-faq {
-  background: #244294;
-  color: #fff;
-}
-
-.faq-active .faq-icon {
-  background: url(/images/icon-faq-active.png) left top no-repeat;
-}
-
-
-.choose-price {
-  border: solid 1px #0076c2;
-}
-
-
-.rate-summary {
-  font-family: "JosefinSans-B", sans-serif;
-  font-size: 22px;
-  color: #58595b;
-  width: 100%;
-  text-align: center;
-}
-
-.rated-bar {
-  float: left;
-  width: 150px;
-  height: 5px;
-  border-radius: 5px;
-  background: #cccccc;
-  margin: 6px;
-}
-
-.rated-bar-percent {
-  display: block;
-  background: #fe9727;
-  float: left;
-  width: 150px;
-  height: 5px;
-  border-radius: 5px;
-} */
-
-/* .rate-text {
-  font-family: "JosefinSans-B", sans-serif;
-  color: #58595b;
-  width: 100%;
-  text-align: center;
-}
-
-.star {
-  width: 130px;
-  height: 24px;
-  margin: 0 auto;
-  background: url("/images/star-unrate.png") no-repeat left center;
-}
-
-.star-rated {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 24px;
-  margin: 0 auto;
-  background: url(/images/star-rated.png) no-repeat left center;
-} */
 
 
 
@@ -1883,14 +1817,16 @@ a.close:hover {
   .slidehome-content h2{
     color: #fab702;
     font-size: 55px;
-   
-    letter-spacing: 2px;
+    font-family:JosefinSans;
+    letter-spacing: 0px;
     text-transform: uppercase;
     line-height: 1.3;
 
   }
   .slidehome-content-intro{
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'JosefinSans';
+    max-width: 500px;
   }
   .btn-muangay{
     padding: 10px 30px;
@@ -1942,7 +1878,7 @@ a.close:hover {
   }
   .homeproduct-name
   {
-    font-size: 16px;
+    font-size: 18px;
     color: #0a0a0a;
     text-transform: uppercase;
     text-align: center;
@@ -2036,7 +1972,7 @@ a.close:hover {
     stroke: #dedede;
     padding: 0;
     margin: 0;
-    font-family: Roboto-B;
+   font-weight: 700;
     padding: 0;
     margin: 0;
     line-height: 1;
@@ -2201,7 +2137,9 @@ input, textarea{
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.411);
   border-radius: 2px;
+  outline: none;
 }
+
 ::placeholder{
   color: #404040;
   font-family: Roboto;

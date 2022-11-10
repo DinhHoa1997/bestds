@@ -17,8 +17,10 @@
   <meta property="og:image" name="og:image" content="http://tonvietphap.24h.co/uploaded/logo/logo.png" data-app />
 
   <link href="/favicon.png" rel="shortcut icon" />
-
-  <link rel="stylesheet" type="text/css" href="/css/style.css?t=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   <link rel="stylesheet" type="text/css" href="/css/grid.css" />
   <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
@@ -140,7 +142,7 @@
               <li class=" "> 
                 <a href="/lien-he/" class=""><span style="background-image:url()">Tin tức</span></a> 
               </li>
-              <li class=" "> 
+              <li class=" ">  
                 <a href="/lien-he/" class=""><span style="background-image:url()">Liên hệ</span></a> 
               </li>
               <li class=" "> 
@@ -150,8 +152,32 @@
                 <a href="/lien-he/" class=""><span style="background-image:url()">Liên hệ</span></a> 
               </li>
               </ul>
-              
-          
+              <div class="icon-search" >
+                <i class="fa fa-search search-icon" aria-hidden="true"></i> 
+                 <div class="search-pc" style="">
+                     <form action="/search/" method="get" id="searchformtab">
+                         <input name="qr" id="qr_search" class="kw-mobile" placeholder="Tìm kiếm" type="text">
+                             <!-- <a href="#" class="submit-search-pc" onClick=""> 
+                                 <i class="fa fa-search" aria-hidden="true"></i> </a> -->
+
+                             <a href="#" class="closeX" onClick="$('.search-pc').hide(); return false;">&#10005;</a>        
+                     </form>
+                 </div>
+                 <script type="text/javascript">
+
+                  $(".submit-search-pc").click(function(){
+                    if ($("#qr_search").val() != "")
+                      $('#searchformtab').submit(); return false;
+                  
+                  });
+
+                  $(document).ready(function () {
+                      $(".search-icon").click(function () {
+                          $(".search-pc").stop().slideToggle("fast");
+                          return false;
+                      });
+                  });
+              </script>  	
             <div class="c"></div>
           </div>
            </div>
