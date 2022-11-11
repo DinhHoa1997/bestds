@@ -239,242 +239,268 @@
     <div class="content">
       <div class="c50"></div>
       <div class="c50 hide-on-mobile"></div>
-      <div class="c50"></div>
-      <div class="page-product">
-        <div class="c20 hide-on-mobile"></div>
-        <div class="c30"></div>
-          <div class="grid">
-              <div class="flex-container">
-                  <div class="cell-1-4 tab-cell-1-1">
-                    <div class="form-dangkytuvan" >
-                      <form  action="/index4.php?page=contact&lang=" method="post" class="frmSubmit" id="regform2" data-alert="Bạn cần nhập đủ thông tin vào những trường màu đỏ" data-captcha ="Mã captcha không đúng" data-success="Thông tin liên hệ đã được gửi thành công !" data-redirect="/contact-success/" class="frmSubmit">
-                        <input type="hidden"  name="code" value="save" />     
-  
-                        <div class="form_booking">
-                          <h3 class="title-booking">
-                            Đăng ký tư vấn
-                          </h3>
-                            <div class="flex-container">
-                            
-                                <div class="cell-1-1 tab-cell-1-1">
-                                    <input name="yourname" type="text" class="txt-contact notNull" placeholder="Họ tên*">
-                                </div> 
-                                <div class="cell-1-1 tab-cell-1-1">
-                                    <input name="phone" type="text"  class="txt-contact notNull"  placeholder="Điện thoại*">
-                                </div>
-                                <div class="cell-1-1 tab-cell-1-1">
-                                    <input name="email" type="text"  class="txt-contact"  placeholder="Email">
-                                </div>
-                                <div class="cell-1-1 tab-cell-1-1">
-                                  <select >
-                                    <option>Thiết kế nội thất</option>
-                                    <option>Biệt thự</option>
-                                    <option>Chung cư</option>
-                                    <option>Nhà phố </option>
-                                    <option>Văn phòng</option>
-                                    <option>Cửa hàng</option>
-                                    <option>Spa thời trang</option>
-                                  
-                                  </select>
-                                </div>
-                                <div class="cell-1-1 tab-cell-1-1">
-                                    <textarea name="other_request" placeholder="Ghi chú"></textarea>
-                                </div>
-                            </div>
-                            <input name="input" type="button" onClick="$('#regform2').submit()"  class="btn-dangky" value="Đăng ký tư vấn" />
+    
+      <!-- Sản phẩm  -->
+<div class="product-detail-wrapper" >
+
+    <div class="grid">
+
+
+        <div class="c20"></div>
+        <div class="c20 hide-on-tab"></div>
+
+
+        <div class="flex-container flex-space-between">
+            <div class="cell-1-2 tab-cell-1-1 pad-cell-1-1">
+
+
+                <div class="swiper-container gallery-top"  style="border: 1px solid #d7d7d7;">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="/uploaded/san-pham/item1.jpg" data-fancybox="group"  onclick="return hs.expand(this)" >
+                                <img  src="/uploaded/san-pham/item1.jpg" alt="" title="" width="100%" />
+                            </a>
+                           
+                          
+                           
+                          
                         </div>
-                        
-                      </form>
+                        <div class="swiper-slide">
+                            <a href="/uploaded/san-pham/item1.2pg" data-fancybox="group"  onclick="return hs.expand(this)" >
+                                <img  src="/uploaded/san-pham/item2.jpg" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/uploaded/san-pham/item3.jpg" data-fancybox="group"  onclick="return hs.expand(this)" >
+                                <img  src="/uploaded/san-pham/item3.jpg" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/uploaded/san-pham/item4.jpg" data-fancybox="group"  onclick="return hs.expand(this)" >
+                                <img  src="/uploaded/san-pham/item4.jpg" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/uploaded/san-pham/item5.jpg" data-fancybox="group"  onclick="return hs.expand(this)" >
+                                <img  src="/uploaded/san-pham/item5.jpg" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+
                     </div>
-                  </div>
-                  <div class="cell-3-4 tab-cell-1-1" >
-                      <div class="flex-container">
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item1.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item1hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Đôi Làm Bàn Làm Việc BLV01</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item2.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item2hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Bằng Gỗ Công Nghiệp BHS03</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item3.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item3hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item4.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item4hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item5.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item5hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item6.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item6hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item1.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item1hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Đôi Làm Bàn Làm Việc BLV01</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item2.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item2hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Bằng Gỗ Công Nghiệp BHS03</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item3.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item3hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item4.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item4hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item5.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item5hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item3.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item3hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item4.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item4hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item5.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item5hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="cell-1-3">
-                            <div class="product-item">
-                              <a href="#" class="">
-                                  <img src="/uploaded/san-pham/sp-item3.jpg" alt="" class="img-product">
-                                  <img src="/uploaded/san-pham/sp-item3hv.jpg" alt="" class="img-product--hv">  
-                              </a>
-                              <h3 class="product-item--name">
-                                  <a href="#" class="text-line-2">Bàn Học Sinh Cho Bé Hiện Đại Đơn Giản BHS05</a>
-                              </h3>
-                            </div>
-                          </div>
-                      </div>
-                      <div id="simplePagerNav"><div class='paging1 pagination '><a href='/tin-dhqghn/page-1/' class='page disabled' ><span><strong> <i class='fa fa-angle-double-left pagination-item-icon'></i>  </strong></span></a><a href='/tin-dhqghn/page-1/' class='page disabled' ><span><strong> <i class='fa fa-angle-left pagination-item-icon'></i> </strong></span></a><a class='clicked pagination-item__clicked'>&nbsp;<span>1</span>&nbsp;</a><a href='/tin-dhqghn/page-2/' class='page pagination-item' >&nbsp;<span>2</span>&nbsp;</a> <a href='/tin-dhqghn/page-2/'  class='page '><span><strong> <i class='fa fa-angle-right pagination-item-icon'></i> </strong></span></a> <a href='/tin-dhqghn/page-2/'  class='page '><span><strong>  <i class='fa fa-angle-double-right pagination-item-icon'></i> </strong></span></a></div></div>
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                </div>
+                <div class="c10"></div>
+                <div class="thumb-image hide-on-tab" style="position:relative;">
+
+                    <div class="swiper-container gallery-thumbs gallery-thumbs-height">
+                        <div class="swiper-wrapper" >
+                            <div class="swiper-slide"><img src="/uploaded/san-pham/item1.jpg" width="100%"/> </div> 
+                            <div class="swiper-slide"><img src="/uploaded/san-pham/item2.jpg" width="100%"/> </div> 
+                            <div class="swiper-slide"><img src="/uploaded/san-pham/item3.jpg" width="100%"/> </div> 
+                            <div class="swiper-slide"><img src="/uploaded/san-pham/item4.jpg" width="100%"/> </div> 
+                            <div class="swiper-slide"><img src="/uploaded/san-pham/item5.jpg" width="100%"/> </div> 
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="c10"></div>
+
+                <script>
+                    var swiper_thumbs = new Swiper(".gallery-thumbs", {
+                        loop: false,
+                        spaceBetween: 10,
+                        slidesPerView: 5,
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                    });
+                    var swiper2 = new Swiper(".gallery-top", {
+                        loop: true,
+                        autoHeight:true,
+                        spaceBetween: 0,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        thumbs: {
+                            swiper: swiper_thumbs,
+                        },
+                    });
+                </script>		                
+
+
+
+                <div class="c10"></div>
+                <div class="c10 hide-on-pc hide-on-tab"></div>
+            </div>
+            <div class="cell-1-2 tab-cell-1-1 pad-cell-1-1">
+                <div class="crumb"><div class="grid"><a href="/">Trang chủ</a> <i class="fa fa-angle-right"></i> <a href='/san-pham/'>Dự án</a></div><div class="c5"></div></div>
+                <div style="position: relative;" >
+                    <h1 class="project-name-detail">Vinhomes Grand Park - 31m2 - anh Khánh</h1>
+                    <div class="c5"></div>
+                    <div  class="pro-detail-intro">
+                        <span style="font-weight: 700;">Công trình:</span> Thiết kế nội thất căn hộ studio Vinhomes Grand Park
+                    </div>
+                    <div  class="pro-detail-intro">
+                        <span style="font-weight: 700;">Địa điểm:</span> Khu vincity quận 9, tp.HCM 
+                    </div>
+                    <div  class="pro-detail-intro">
+                        <span style="font-weight: 700;"> Hạng mục:</span> Phòng khách bếp, 1 phòng ngủ
+                    </div>
+                    <div  class="pro-detail-intro">
+                        <span style="font-weight: 700;">Diện tích:</span>  31m2
+                    </div>
+                    <div  class="pro-detail-intro">
+                        <span style="font-weight: 700;">Phong cách: </span> Hiện đại
+                    </div>
+                 
+                    <div class="c20"></div>
+                        <div class="download-link">
+                            <a href="#" target="_blank">  <i class="far fa-file-pdf" style="font-size:25px; margin-right:20px ;"></i>  Xem dự án chất lượng HD tại đây</a>
+                        </div>    
                     
-                  </div>
-              </div>
+                    <div class="c20"></div>
+
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style ">
+                        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                        <a class="addthis_button_tweet"></a>
+                        <a class="addthis_counter addthis_pill_style"></a>
+                    </div>
+                    <!-- AddThis Button END -->
+                    <div class="c20  hide-on-tab"></div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="c20" style="border-top:1px solid #d6d6d6"></div>
+    </div>
+
+</div>
+<!-- End Sản phẩm -->
+
+<div class="grid">
+    <div class="c30"></div>
+    <div class="content-detail">
+        <h2>Mô tả sản phẩm      </h2>
+        <div class="c10"></div>
+Bàn làm việc kết hợp giá sách bằng gỗ BLV05 được thiết kế đơn giản, tiện lợi. Nếu bạn là người không cầu kỳ thì bàn làm việc này sẽ giúp cho bạn mong muốn sở hữu nó. Với mặt bàn rộng rãi đi kèm các ô tủ nhỏ với nhiều ngăn kéo để lưu trữ đồ đạc, sách vở.
+
+    </div>
+
+
+</div>
+
+<div class="c20"></div>
+<div class="c20"></div>
+
+
+<div class="projectnews-wrapper">
+               
+    <div class="grid">
+        <div class="homecat-title--sm">
+            Blue Space
+          </div>
+        
+          <h2 class="homecat-title--spc">
+            <a href="#">Dự án mới
+            </a>
+          </h2>
+          <div class="c10"></div>
+          <div class="line-w"> <span></span></div>
+          <div class="flex-container">
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi1.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi2.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi3.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi4.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi1.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi2.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi3.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-1-4 tab-cell-1-1">
+                    <div class="projectnews-item">
+                        <a href="#" class="img-shine">
+                            <img src="/uploaded/du-an/duanmoi4.jpg" alt="">
+                        </a>
+                        <div class="homeproject-item--name">
+                          <a href="">Master Bedroom</a>  
+                        </div>
+                    </div>
+                </div>
+               
           </div>
           <div class="c20 hide-on-mobile"></div>
           <div class="c30"></div>
-          <script>
-             $(window).scroll(function () {
-            if ($(window).scrollTop()>= 400) {
-                $('.form-dangkytuvan').addClass('fixed');
+          <div class="c20 hide-on-mobile"></div>
           
-            }
-            else {
-                $('.form-dangkytuvan').removeClass('fixed');
-          
-            }
-        });
-          </script>
-      </div>
+    </div>
+</div>
       
     </div>
     <!-- end content -->
